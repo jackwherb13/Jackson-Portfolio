@@ -11,6 +11,7 @@ export default function Hero() {
 
       <p className="mt-4 max-w-2xl text-lg text-neutral-600">
         Computer Science student building practical software projects in Java, C, and Python.
+        Currently looking for internships in the Summer of 2026 in IT/Computer Science related fields.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">

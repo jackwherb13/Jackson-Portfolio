@@ -10,7 +10,7 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a href="#" className="font-semibold tracking-tight">
-          Jackson
+          Jackson Herbert
         </a>
         <nav className="flex gap-5 text-sm text-neutral-600">
           {links.map((l) => (
