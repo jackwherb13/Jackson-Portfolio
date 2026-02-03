@@ -1,3 +1,5 @@
+import { Github, Linkedin } from "lucide-react"
+
 const links = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
@@ -12,12 +14,31 @@ export default function Navigation() {
         <a href="#" className="font-semibold tracking-tight text-gray-400">
           Jackson Herbert
         </a>
-        <nav className="flex gap-5 text-sm text-neutral-600">
+
+        <nav className="flex items-center gap-6 text-sm text-neutral-600">
           {links.map((l) => (
             <a key={l.href} href={l.href} className="hover:text-black">
               {l.label}
             </a>
           ))}
+
+          <a
+            href="https://github.com/YOUR_USERNAME"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            <Github size={18} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black"
+          >
+            <Linkedin size={18} />
+          </a>
         </nav>
       </div>
     </header>
