@@ -23,7 +23,7 @@ export default function Navigation() {
           ))}
 
           <a
-            href="https://github.com/YOUR_USERNAME"
+            href="https://github.com/jackwherb13"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black"
@@ -32,7 +32,7 @@ export default function Navigation() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+            href="https://www.linkedin.com/in/jackson-herbert-184257372/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black"
