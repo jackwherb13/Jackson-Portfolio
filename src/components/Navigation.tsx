@@ -10,14 +10,14 @@ const links = [
 export default function Navigation() {
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="#" className="font-semibold tracking-tight text-black px-2 py-1 rounded transition hover:outline hover:outline-4 hover:outline-black">
+      <div className="mx-auto max-w-5xl px-6 py-20 bg-black/40 backdrop-blur-md rounded-xl">
+        <a href="#" className="font-semibold tracking-tight text-neutral-600 px-2 py-1 rounded transition hover:outline hover:outline-4 hover:outline-black">
           Jackson Herbert
         </a>
 
         <nav className="flex items-center gap-6 text-sm text-neutral-600">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-black">
+            <a key={l.href} href={l.href} className="font-semibold tracking-tight text-neutral-600 px-2 py-1 rounded transition hover:outline hover:outline-4 hover:outline-black">
               {l.label}
             </a>
           ))}

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-24">
+    <section className="mx-auto max-w-5xl px-6 py-20 bg-black/40 backdrop-blur-md rounded-xl">
       <p className="text-sm uppercase tracking-widest text-neutral-500">
         Portfolio
       </p>
