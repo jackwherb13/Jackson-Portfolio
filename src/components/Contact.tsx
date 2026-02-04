@@ -1,5 +1,5 @@
 export default function Contact() {
-  const email = "jackwherb13@gmail.com" // TODO: replace with your real email
+  const email = "jackwherb13@gmail.com" 
 
   return (
     <section id="contact" className="mx-auto max-w-5xl px-6 py-20">
