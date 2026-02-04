@@ -1,3 +1,5 @@
+"use client"
+
 export default function Contact() {
   const email = "jackwherb13@gmail.com" 
 
@@ -35,7 +37,7 @@ export default function Contact() {
         </a>
 
         <a
-          href="www.linkedin.com/in/jackson-herbert-184257372"
+          href="https://www.linkedin.com/in/jackson-herbert-184257372"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-xl border border-white/30 px-5 py-3 font-medium text-white hover:border-white/60"
