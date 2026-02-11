@@ -32,15 +32,17 @@ export default function FloatingResume() {
       className="
         hidden sm:inline-flex
         fixed bottom-6 right-6
-        bg-white text-black
+        bg-black text-white
+        border border-white/30
         px-5 py-3
         rounded-full
         font-medium
         shadow-lg
         transition
         hover:scale-105
-        hover:shadow-xl
-      "
+        hover:border-white/60
+        "
+
     >
       Resume
     </a>
