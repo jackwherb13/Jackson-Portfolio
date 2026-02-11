@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-5xl px-6 py-20 bg-black/40 backdrop-blur-sm rounded-xl">
+    <section id="projects" className="mx-auto max-w-5xl px-6 py-20 bg-black/50 border border-white/10 rounded-xl">
       <h2 className="text-2xl font-semibold">Projects</h2>
 
         <a
