@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 export default function FloatingResume() {
-  const [show, setShow] = useState(false)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     const onScroll = () => {
@@ -12,24 +12,21 @@ export default function FloatingResume() {
       const viewport = window.innerHeight
       const fullHeight = doc.scrollHeight
 
-      // progress from 0 to 1
       const progress = (scrollTop + viewport) / fullHeight
-      setShow(progress >= 0.5)
+      setVisible(progress >= 0.5)
     }
 
-    onScroll() // run once on load
+    onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  if (!show) return null
-
   return (
     <a
-      href="/JacksonHerbertResume.pdf"
+      href="/Jackson_Herbert_Resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
-      className="
+      className={`
         hidden sm:inline-flex
         fixed bottom-6 right-6
         bg-black text-white
@@ -38,11 +35,10 @@ export default function FloatingResume() {
         rounded-full
         font-medium
         shadow-lg
-        transition
-        hover:scale-105
-        hover:border-white/60
-        "
-
+        transition-all duration-500
+        hover:scale-105 hover:border-white/60
+        ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3 pointer-events-none"}
+      `}
     >
       Resume
     </a>
