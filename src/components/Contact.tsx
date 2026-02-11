@@ -4,7 +4,7 @@ export default function Contact() {
   const email = "jackwherb13@gmail.com" 
 
   return (
-    <section id="contact" className="mx-auto max-w-5xl px-6 py-20">
+    <section id="contact" className="mx-auto max-w-5xl px-6 py-20 bg-black/50 border border-white/10 rounded-xl">
       <h2 className="text-2xl font-semibold text-white">Contact</h2>
       <p className="mt-4 max-w-2xl text-white/80">
         Want to chat about an internship, a project, or anything software-related?
